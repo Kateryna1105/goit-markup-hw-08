@@ -1,0 +1,132 @@
+.sect-filtr-buttons {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.btn-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 47px;
+}
+
+.btn-item {
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus {
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;}
+&:not(:last-child) {
+    margin-right: 8px;
+     }
+}
+
+.about-btn {
+display: block;
+padding: 5px 22px;
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--about-btn-color);
+background: #F5F4FA;
+border: none;
+border-radius: 4px;
+}
+
+.all {
+    background: #2196F3;
+    color: #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.clik {
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover, 
+&:focus {
+    background: #2196F3;
+    color: #FFFFFF;    
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+}
+
+.send-btn {
+display: block;
+margin: 0 auto;
+font-family: inherit;
+
+padding: 10px 52px;
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
+background: #188CE8;
+border: none;
+border-radius: 4px;
+color: #FFFFFF;
+}
+
+.send-btn {
+    font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+}
+
+.hero__button {
+cursor: pointer;
+display: block;
+margin: 0 auto;
+border: 0;
+padding: 10px 32px;
+border-radius: 4px;
+
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+background: #2196F3; 
+}
+
+.subscribe-btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 200px;
+height: 50px;
+letter-spacing: 0.06em;
+margin-left: 12px;
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+color: #FFFFFF;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: none;
+&::after {
+    content: '';
+    display: block;    
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+   background-image: url(../img/icon-send.png);
+   background-size: contain;
+   background-position: center;
+      }
+}
+

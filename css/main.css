@@ -40,6 +40,7 @@ body {
 
 .img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -51,12 +52,27 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   outline: #f32141;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .container__team-back {
@@ -185,43 +201,73 @@ body {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 198px;
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1600px;
+  width: 100%;
   height: 600px;
   margin: 0 auto;
   background-color: #C4C4C4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg-hero.jpg);
+  background-size: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 280px;
+  }
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
   margin-bottom: 30px;
-  max-width: 696px;
-  height: 120px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    height: 120px;
+    width: 696px;
+  }
+}
 
 .particulars {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .particulars {
+    padding-top: 55px;
+    padding-bottom: 65px;
+  }
 }
 
-.particulars__list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .particulars__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.particulars__item:not(:last-child) {
-  margin-right: 30px;
+.particulars__item:not(:first-child) {
+  margin-top: 30px;
 }
 
 .particulars__item::before {
@@ -242,14 +288,15 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+  text-align: center;
 }
 
 .particulars__text {
+  margin-top: 10px;
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-color);
-  max-width: 270px;
-  margin-top: 10px;
+  max-width: 450px;
 }
 
 .icon-antenna::before {

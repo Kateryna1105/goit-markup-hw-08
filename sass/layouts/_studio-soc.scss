@@ -12,15 +12,19 @@
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-    background-color: #2196F3;
+ 
 }
-    &:hover .studio-soc-icon,
-    &:focus .studio-soc-icon {
-    fill: #FFFFFF;
+
+.studio-soc-link:hover,
+.studio-soc-link:focus {
+background-color: #2196F3;
 }
+
+.studio-soc-link:hover .studio-soc-icon,
+.studio-soc-link:focus .studio-soc-icon {
+fill: #FFFFFF;
 }
+
 
 .studio-soc-icon {
     fill: #AFB1B8;

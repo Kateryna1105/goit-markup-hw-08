@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-     <header class="header">
+    <header class="header">
         <div class="container one-line"> 
          <a href="#" lang="en" class="logo link logomg">Web<span class="logo--color-dark">Studio</span></a>
          <nav class="navigation">
@@ -40,14 +40,66 @@
             </li>
                  <li class="links__tel">
                 <a href="tel:+380961111111" class="links__nav link links__nav--color-dark">
-                    <svg class="links__email-icon" width="10" height="16">
+                    <svg class="links__tel-icon" width="10" height="16">
                         <use href="./img/icons-header.svg#icon-icon-phone"></use>
                     </svg>
                     +38 096 111 11 11</a>
             </li>
          </ul>
-         </ul>
+         <button type="button" class="menu_btn_open" data-menu-open>
+            <svg class="menu_btn" width="24" height="16">
+                <use href="./img/menu_btn.svg#icon-menu_btn"></use>
+            </svg>
+        </button>
          </div>
+         <div class="mob-menu is-hidden" data-menu>
+            <div class="container">
+                <div class="mob-menu__top">
+            <button type="button" class="menu_btn_close" data-menu-close>
+                <svg class="menu_btn" width="19" height="19">
+                    <use href="./img/menu_btn_close.svg#icon-menu_btn_close"></use>
+                </svg>
+            </button>
+            <nav class="mob-menu__nav">
+                <ul class="mob-menu__nav-list list">
+                  <li class="mob-menu__nav-item">
+                    <a href="#" class="mob-menu__nav-page link">Студия</a>
+                  </li>
+                  <li class="mob-menu__nav-item">
+                      <a href="./portfolio.html" class="mob-menu__nav-page link">Портфолио</a>
+                  </li>
+                  <li class="mob-menu__nav-item"> 
+                      <a href="#" class="mob-menu__nav-page link">Контакты</a>
+                  </li>
+                </ul>
+               </nav>
+            </div>
+               <ul class="mob-menu__links list">
+                <li class="mob-menu__tel">
+                    <a href="tel:+380961111111" 
+                    class="mob-menu__navtel link">+38 096 111 11 11</a>
+                </li>
+                <li class="mob-menu__email">
+                   <a href="mailto:info@devstudio.com" 
+                      class="mob-menu__navemail link">info@devstudio.com</a>
+               </li>                    
+            </ul>
+            <ul class="mob-menu__soclist">
+                <li class="mob-menu__socitem">
+                    <a href="" class="mob-menu__soc Inst">Instagram</a>
+                </li>
+                <li class="mob-menu__socitem">
+                    <a href="" class="mob-menu__soc Twit">Twitter</a>
+                </li>
+                <li class="mob-menu__socitem">
+                    <a href="" class="mob-menu__soc Face">Facebook</a>
+                </li>
+                <li class="mob-menu__socitem">
+                    <a href="" class="Link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+         </div>         
     </header>
     <main>
         <section class="sect-filtr-buttons">
@@ -65,10 +117,25 @@
                 <li class="portfolio-item">
                     <a href="#" class="portfolio-link link">
                         <div class="portfolio-slayd">
-                    <img class="img-correct" src="./img/our-people.jpg" 
-                    alt="photos-our-people"
-                    width="370"
-                    height="294">
+                            <picture>
+                                <source
+                                srcset="./img/our-people.jpg 1x, 
+                                        ./img/our-people-desk2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                <source
+                                srcset="./img/our-people-tab1x.jpg 1x, 
+                                        ./img/our-people-tab2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                <source
+                                srcset="./img/our-people-mob1x.jpg 1x, 
+                                        ./img/our-people-mob2x.jpg 2x"
+                                         media="(max-width:767px)">
+                                <img    class="img"               
+                                        src="./img/our-people-mob1x.jpg" 
+                                         alt="photos-our-people"
+                                         width="450" 
+                                         height="294">
+                            </picture>  
                     <p class="portfolio-slayd-text">
                         Ресурс предлагает комплексные 
                         предложения с разным уровнем 
@@ -85,11 +152,26 @@
                 <li class="portfolio-item">
                     <a href="#" class="portfolio-link link">
                         <div class="portfolio-slayd">
-                    <img class="img-correct" src="./img/poster-new-orlean.jpg" 
-                    alt="poster-new-orlean-vs-golden-star"
-                    width="370" 
-                    height="294">
-                    <p class="portfolio-slayd-text">
+                            <picture>
+                                <source
+                                srcset="./img/poster-new-orlean.jpg 1x, 
+                                        ./img/poster-new-orlean_desk2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                <source
+                                srcset="./img/poster-new-orlean_tab1x.jpg 1x, 
+                                        ./img/poster-new-orlean_tab2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                <source
+                                srcset="./img/poster-new-orlean_mob1x.jpg 1x, 
+                                        ./img/poster-new-orlean_mob2x.jpg 2x"
+                                         media="(max-width:767px)">
+                                <img    class="img"               
+                                        src="./img/poster-new-orlean_mob1x.jpg" 
+                                         alt="poster-new-orlean-vs-golden-star"
+                                         width="450" 
+                                         height="294">
+                            </picture>
+                       <p class="portfolio-slayd-text">
                         Ресурс предлагает комплексные 
                         предложения с разным уровнем 
                         функционала и сервисов. Все это позволит 
@@ -105,10 +187,25 @@
                 <li class="portfolio-item">
                     <a href="#" class="portfolio-link link">
                         <div class="portfolio-slayd">
-                    <img class="img-correct" src="./img/seafood-rest.jpg" 
-                    alt="photo-logo-seafood-restaurant"
-                    width="370" 
-                    height="294">
+                            <picture>
+                                <source
+                                srcset="./img/seafood-rest.jpg 1x, 
+                                        ./img/seafood-rest_desk2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                <source
+                                srcset="./img/seafood-rest_tab1x.jpg 1x, 
+                                        ./img/seafood-rest_tab2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                <source
+                                srcset="./img/seafood-rest_mob1x.jpg 1x, 
+                                        ./img/seafood-rest_mob2x.jpg 2x"
+                                         media="(max-width:767px)">
+                                <img    class="img"               
+                                        src="./img/seafood-rest_mob1x.jpg" 
+                                         alt="photo-logo-seafood-restaurant"
+                                         width="450" 
+                                         height="294">
+                            </picture>
                     <p class="portfolio-slayd-text">
                         Ресурс предлагает комплексные 
                         предложения с разным уровнем 
@@ -125,10 +222,25 @@
                 <li class="portfolio-item">
                     <a href="#" class="portfolio-link link">
                         <div class="portfolio-slayd">
-                    <img class="img-correct" src="./img/project-mark.jpg" 
-                    alt="photo-headphones"
-                    width="370" 
-                    height="294">
+                            <picture>
+                                <source
+                                srcset="./img/project-mark.jpg 1x, 
+                                        ./img/project-mark_desk2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                <source
+                                srcset="./img/project-mark_tab1x.jpg 1x, 
+                                        ./img/project-mark_tab2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                <source
+                                srcset="./img/project-mark_mob1x.jpg 1x, 
+                                        ./img/project-mark_mob2x.jpg 2x"
+                                         media="(max-width:767px)">
+                                <img    class="img"               
+                                        src="./img/project-mark_mob1x.jpg" 
+                                         alt="photo-headphones"
+                                         width="450" 
+                                         height="294">
+                            </picture>
                     <p class="portfolio-slayd-text">
                         Ресурс предлагает комплексные 
                         предложения с разным уровнем 
@@ -145,10 +257,25 @@
                 <li class="portfolio-item">
                     <a href="#" class="portfolio-link link">
                         <div class="portfolio-slayd">
-                    <img class="img-correct" src="./img/project-boxes.jpg" 
-                    alt="photo-boxes"
-                    width="370" 
-                    height="294">
+                            <picture>
+                                <source
+                                srcset="./img/project-boxes.jpg 1x, 
+                                        ./img/project-boxes_desk2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                <source
+                                srcset="./img/project-boxes_tab1x.jpg 1x, 
+                                        ./img/project-boxes_tab2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                <source
+                                srcset="./img/project-boxes_mob1x.jpg 1x, 
+                                        ./img/project-boxes_mob2x.jpg 2x"
+                                         media="(max-width:767px)">
+                                <img    class="img"               
+                                        src="./img/project-boxes_mob1x.jpg" 
+                                         alt="photo-boxes"
+                                         width="450" 
+                                         height="294">
+                            </picture>
                     <p class="portfolio-slayd-text">
                         Ресурс предлагает комплексные 
                         предложения с разным уровнем 
@@ -165,10 +292,25 @@
                 <li class="portfolio-item">
                     <a href="#" class="portfolio-link link">
                          <div class="portfolio-slayd">
-                    <img class="img-correct" src="./img/inspiration-comp.jpg" 
-                    alt="photo-computer"
-                    width="370" 
-                    height="294">
+                            <picture>
+                                <source
+                                srcset="./img/inspiration-comp.jpg 1x, 
+                                        ./img/inspiration-comp_desk2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                <source
+                                srcset="./img/inspiration-comp_tab1x.jpg 1x, 
+                                        ./img/inspiration-comp_tab2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                <source
+                                srcset="./img/inspiration-comp_mob1x.jpg 1x, 
+                                        ./img/inspiration-comp_mob2x.jpg 2x"
+                                         media="(max-width:767px)">
+                                <img    class="img"               
+                                        src="./img/inspiration-comp_mob1x.jpg" 
+                                         alt="photo-computer"
+                                         width="450" 
+                                         height="294">
+                            </picture>
                     <p class="portfolio-slayd-text">
                         Ресурс предлагает комплексные 
                         предложения с разным уровнем 
@@ -185,10 +327,25 @@
                 <li class="portfolio-item">
                     <a href="#" class="portfolio-link link">
                         <div class="portfolio-slayd">
-                    <img class="img-correct" src="./img/edition.jpg" 
-                    alt="photo-book-limited-edition"
-                    width="370" 
-                    height="294">
+                            <picture>
+                                <source
+                                srcset="./img/edition.jpg 1x, 
+                                        ./img/edition_desk2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                <source
+                                srcset="./img/edition_tab1x.jpg 1x, 
+                                        ./img/edition_tab2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                <source
+                                srcset="./img/edition_mob1x.jpg 1x, 
+                                        ./img/edition_mob2x.jpg 2x"
+                                         media="(max-width:767px)">
+                                <img    class="img"               
+                                        src="./img/edition_mob1x.jpg" 
+                                         alt="photo-book-limited-edition"
+                                         width="450" 
+                                         height="294">
+                            </picture>
                     <p class="portfolio-slayd-text">
                         Ресурс предлагает комплексные 
                         предложения с разным уровнем 
@@ -205,10 +362,25 @@
                 <li class="portfolio-item">
                     <a href="#" class="portfolio-link link">
                         <div class="portfolio-slayd">
-                    <img class="img-correct" src="./img/project-lab.jpg" 
-                    alt="photo-label-tag"
-                    width="370" 
-                    height="294">
+                            <picture>
+                                <source
+                                srcset="./img/project-lab.jpg 1x, 
+                                        ./img/project-lab_desk2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                <source
+                                srcset="./img/project-lab_tab1x.jpg 1x, 
+                                        ./img/project-lab_tab2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                <source
+                                srcset="./img/project-lab_mob1x.jpg 1x, 
+                                        ./img/project-lab_mob2x.jpg 2x"
+                                         media="(max-width:767px)">
+                                <img    class="img"               
+                                        src="./img/project-lab_mob1x.jpg" 
+                                         alt="photo-label-tag"
+                                         width="450" 
+                                         height="294">
+                            </picture>
                     <p class="portfolio-slayd-text">
                         Ресурс предлагает комплексные 
                         предложения с разным уровнем 
@@ -225,10 +397,25 @@
                 <li class="portfolio-item">
                     <a href="#" class="portfolio-link link">
                         <div class="portfolio-slayd">
-                    <img class="img-correct" src="./img/growing-business.jpg" 
-                    alt="photo-computer-with-an-inscription"
-                    width="370" 
-                    height="294">
+                            <picture>
+                                <source
+                                srcset="./img/growing-business.jpg 1x, 
+                                        ./img/growing-business_desk2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                <source
+                                srcset="./img/growing-business_tab1x.jpg 1x, 
+                                        ./img/growing-business_tab2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                <source
+                                srcset="./img/growing-business_mob1x.jpg 1x, 
+                                        ./img/growing-business_mob2x.jpg 2x"
+                                         media="(max-width:767px)">
+                                <img    class="img"               
+                                        src="./img/growing-business_mob1x.jpg" 
+                                         alt="photo-computer-with-an-inscription"
+                                         width="450" 
+                                         height="294">
+                            </picture>
                     <p class="portfolio-slayd-text">
                         Ресурс предлагает комплексные 
                         предложения с разным уровнем 
@@ -247,25 +434,25 @@
         </section>
     </main>
     <footer class="footer">
-            <div class="container">
-            <div class="footer-line">
-                <div class="logo-adress">
-            <a href="#" lang="en" class="logo foot link">Web<span class="logo--color-light">Studio</span></a>
-            <address class="address-section">
-                <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
-                <ul class="list">
-                    <li class="list-item-footer">
-                        <a href="mailto:info@example.com" class="foot-link link foot-link--color-light">info@example.com</a>
-                    </li>
-                    <li class="list-item-footer">
-                        <a href="tel:+380991111111" class="foot-link last link foot-link--color-light">+38 099 111 11 11</a>
-                    </li>                   
-                </ul>
-                 </address> 
-                 </div>
-                 <div class="join-links">
-                    <p class="join-title">ПРИСОЕДИНЯЙТЕСЬ</p>
-                 <ul class="join-list list">
+        <div class="container footer-line">
+                <div class="foot-tabletline">
+                    <div class="logo-adress">
+                        <a href="#" lang="en" class="logo foot link">Web<span class="logo--color-light">Studio</span></a>
+                        <address class="address-section">
+                            <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
+                            <ul class="list">
+                                <li class="list-item-footer">
+                                    <a href="mailto:info@example.com" class="foot-link link foot-link--color-light">info@example.com</a>
+                                </li>
+                                <li class="list-item-footer">
+                                    <a href="tel:+380991111111" class="foot-link last link foot-link--color-light">+38 099 111 11 11</a>
+                                </li>                   
+                            </ul>
+                             </address> 
+                    </div>
+                <div class="join-links">
+                        <p class="join-title">ПРИСОЕДИНЯЙТЕСЬ</p>
+                        <ul class="join-list list">
                     <li class="join-item">
                         <a href="" class="join-link">
                           <svg class="join-icon" width="20" height="20">
@@ -294,8 +481,9 @@
                              </svg>
                         </a>
                     </li>
-                </ul>     
-            </div>  
+                        </ul>     
+                    </div>       
+               </div>  
                 <div class="subscribe">
                     <p class="subscribe-title">Подпишитесь на рассылку</p>
                     <div class="subscribe-option">

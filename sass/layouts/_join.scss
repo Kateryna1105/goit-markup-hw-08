@@ -1,6 +1,14 @@
 .join-links {
-    margin-left: 70px;
-   }
+    margin-bottom: 60px;
+    @include tablet {
+        margin-bottom: 0px;
+        margin-left: 165px;
+    }
+    @include desktop {
+        margin-left: 70px;
+        padding-top: 12px;
+            }
+      }
 
 .join-title {
     margin-bottom: 20px;
@@ -13,7 +21,7 @@
 .join-list {
     display: flex;
     gap: 10px;
-    }
+        }
 
 .join-link {
     width: 44px;

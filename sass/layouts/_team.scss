@@ -1,28 +1,69 @@
 .section__team {
- padding-bottom: 94px;
-padding-top: 94px;
+ padding-bottom: 60px;
+padding-top: 60px;
 background: #F5F4FA;
+
+@include desktop {
+    padding-top: 94px;
+padding-bottom: 94px;
+ }
 }
 
 .team__title {
-margin-bottom: 50px;
+margin-bottom: 30px;
 background: #F5F4FA;
 font-weight: 700;
-font-size: 36px;
-line-height: 1.17;
+font-size: 28px;
+line-height: 1.18;
 text-align: center;
 color:var(--secondary-title-color);
 background: #f5f4fa;
+@include desktop {
+    font-size: 36px;
+line-height: 1.17;
+margin-bottom: 50px;
+ }
 } 
 
 .team__list {
 display: flex;
+flex-wrap: wrap;
 gap: 30px;
+   
+    @include desktop {
+       flex-wrap: nowrap;
+    }
 }
 
 .team__item {
+
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
+    @include tablet {
+    width: calc((100% - 30px) / 2);}
+
+    @include desktop {
+        width: calc((100% - 90px) / 4);;
+     }
+}
+
+.container__team-back {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    width: 100%;
+    border-radius: 0px 0px 4px 4px;
+    background: #FFFFFF;
+    @include mobile {
+        width: 480px;
+            }
+
+    @include tablet {
+        width: 100%;
+    }
+
+    @include desktop {
+        width: 100%;
+    }
 }
 
 .team__person {

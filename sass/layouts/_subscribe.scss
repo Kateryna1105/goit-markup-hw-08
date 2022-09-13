@@ -1,7 +1,7 @@
 .subscribe-option {
     display: flex;
     gap: 12px;
-}
+   }
 
 .subscribe-title {
     margin-bottom: 20px;
@@ -15,8 +15,18 @@ color: #FFFFFF;
 }
 
 .subscribe {
-    margin-left: 93px;
+    margin-left: 0px;
+    @include desktop {
+        margin-left: 93px;
+    }
     }
 
-
-
+.subscribe-form {
+    @include tablet {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    @include desktop {
+        flex-direction: row;
+    }
+}

@@ -17,8 +17,15 @@ background: #2F303A;
     }}
 
 .foot-tabletline {
+    margin-bottom: 60px;
+
     @include tablet {
         display: flex;
+        margin-bottom: 60px;
+        align-items: baseline;
+           }
+           @include desktop {
+            align-items: baseline;
            }
     } 
 
@@ -41,7 +48,10 @@ background: #2F303A;
     display: block;
     font-style: normal;
     margin-bottom: 60px;
-    @include desktop {
+    @include tablet {
+        margin-bottom: 0;
+    }
+        @include desktop {
         margin-bottom: 0px;
     }
 }

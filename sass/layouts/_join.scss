@@ -1,13 +1,13 @@
 .join-links {
-    margin-bottom: 60px;
+    
     @include tablet {
         margin-bottom: 0px;
         margin-left: 165px;
     }
     @include desktop {
         margin-left: 70px;
-        padding-top: 12px;
-            }
+        align-items: baseline;
+                }
       }
 
 .join-title {

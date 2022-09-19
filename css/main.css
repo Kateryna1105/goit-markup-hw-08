@@ -212,7 +212,6 @@ body {
   .links__email {
     margin-right: 0;
     margin-bottom: 10px;
-    padding-top: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -222,15 +221,11 @@ body {
   }
 }
 
-.links__tel {
-  padding-bottom: 20px;
-}
-
 .links__nav {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -868,6 +863,7 @@ body {
 @media screen and (min-width: 1200px) {
   .foot-tabletline {
     align-items: baseline;
+    margin-bottom: 0px;
   }
 }
 

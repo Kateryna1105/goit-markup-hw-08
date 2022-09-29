@@ -75,10 +75,14 @@ color: rgba(117, 117, 117, 0.5);
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
+font-size: 12px;
+line-height: 1.17;
 letter-spacing: 0.03em;
 color: #757575;
+@include desktop {
+font-size: 14px;
+line-height: 1.71;
+}
 }
 
 .check-line {

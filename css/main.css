@@ -128,7 +128,7 @@ body {
 }
 
 .header {
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .one-line {
@@ -1474,10 +1474,16 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .check-line {
